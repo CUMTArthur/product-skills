@@ -28,7 +28,7 @@ description: |
 **输出示例**:
 ```json
 {
-  "model": "主页",
+  "model": "主页频道",
   "event": "点击视频卡片",
   "type": "action",
   "params": ["from", "video_id", "video_title"],
@@ -118,7 +118,7 @@ params: keyword, result_id, position
 
 **Model 名称**:
 - 使用中文模块名
-- 示例: 主页、新闻、视频、社区
+- 示例: 主页频道、数据频道、主队频道、综合内页
 
 **Event 名称**:
 - 动词+名词结构
@@ -183,23 +183,8 @@ params: keyword, result_id, position
 }
 ```
 
-### 模式 3: 搜索行为
 
-```json
-{
-  "model": "搜索",
-  "event": "搜索",
-  "type": "action",
-  "params": ["keyword", "search_type", "result_count"],
-  "取值说明": {
-    "keyword": "搜索关键词",
-    "search_type": "搜索类型（1=全局, 2=本模块）",
-    "result_count": "搜索结果数量"
-  }
-}
-```
-
-### 模式 4: 用户交互
+### 模式 3: 用户交互
 
 ```json
 {
