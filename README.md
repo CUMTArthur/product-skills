@@ -54,7 +54,7 @@ python tracking_dict.py search 曝光 新闻
 **示例 3: 验证埋点规范**
 ```
 帮我检查这个埋点是否规范:
-model: 主页
+model: 主页频道
 event: 点击视频
 type: action
 params: from, video_id, position
@@ -211,17 +211,7 @@ params: from, video_id, position
 }
 ```
 
-### 模式 3: 搜索行为
-```json
-{
-  "model": "搜索",
-  "event": "搜索",
-  "type": "action",
-  "params": ["keyword", "search_type", "result_count"]
-}
-```
-
-### 模式 4: 用户交互
+### 模式 3: 用户交互
 ```json
 {
   "model": "[模块名]",
@@ -231,7 +221,7 @@ params: from, video_id, position
 }
 ```
 
-### 模式 5-10
+### 模式 4-10
 详见 `常见埋点模式.md`
 
 ## 💡 最佳实践
